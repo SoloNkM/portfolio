@@ -9,6 +9,7 @@ const NIVEAUX = [
   ["projets", "Projets"],
   ["competences", "Compétences"],
   ["foi", "Foi"],
+  ["ambitions", "Ambitions"],
   ["contact", "Contact"],
 ];
 
@@ -366,10 +367,32 @@ export default function App() {
         </section>
 
         <Chargement texte="chargement du niveau 5…" />
+        <section className="block" id="ambitions">
+          <div className="wrap">
+            <Reveal>
+              <Niveau n={5}>Ambitions</Niveau>
+              <p className="foi-intro">
+                Je ne sais pas encore où je serai dans 5 ans, mais je sais où je veux aller.
+              </p>
+              <div className="verses">
+                <article className="project">
+                  <h3>À court terme</h3>
+                  <p>Un stage ou une première expérience en développement d’applications, pour apprendre auprès de professionnels et transformer mes idées en solutions utilisables.</p>
+                </article>
+                <article className="project">
+                  <h3>La suite</h3>
+                  <p>Utiliser mes compétences en informatique et en intelligence artificielle pour concevoir des solutions à de vrais problèmes, en Afrique puis à l’international. À l’ère de l’IA, une bonne idée suffit pour créer des solutions innovantes, et je veux y contribuer.</p>
+                </article>
+              </div>
+            </Reveal>
+          </div>
+        </section>
+
+        <Chargement texte="chargement du niveau 6…" />
         <section className="block" id="contact">
           <div className="wrap">
             <Reveal>
-              <Niveau n={5}>Contact</Niveau>
+              <Niveau n={6}>Contact</Niveau>
               <p className="foi-intro">Partie sauvegardée. On continue l’aventure ensemble ?</p>
               <ul className="contact">
                 <li><span>email pro :</span><a href={"mailto:" + EMAIL}>{EMAIL}</a></li>
