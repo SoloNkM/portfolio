@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 const GITHUB = "https://github.com/SoloNkM";
+const REPO_AGENT = "https://github.com/SoloNkM/agent-";
 const EMAIL = "ndamarc715@gmail.com";
 
 const NIVEAUX = [
@@ -284,7 +285,7 @@ export default function App() {
                   <li>Arrêt automatique après 3 échecs de suite</li>
                   <li>Clés secrètes protégées, nombreux tests de sécurité</li>
                 </ul>
-                <a className="btn primary" href={GITHUB} target="_blank" rel="noreferrer">Voir sur GitHub</a>
+                <a className="btn primary" href={REPO_AGENT} target="_blank" rel="noreferrer">Voir sur GitHub</a>
               </article>
               <p className="meta side">Quêtes annexes</p>
               <div className="projects">
